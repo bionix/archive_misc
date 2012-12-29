@@ -1,0 +1,4 @@
+# official varnish debian repo
+# wget -q -O- http://repo.varnish-cache.org/debian/GPG-key.txt | apt-key add -
+#deb http://repo.varnish-cache.org/debian/ squeeze varnish-3.0
+deb http://repo.varnish-cache.org/debian/ wheezy varnish-3.0

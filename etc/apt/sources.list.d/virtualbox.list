@@ -1,0 +1,4 @@
+# official virtualbox oracle repo for debian
+# wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+#deb http://download.virtualbox.org/virtualbox/debian squeeze contrib
+deb http://download.virtualbox.org/virtualbox/debian wheezy contrib

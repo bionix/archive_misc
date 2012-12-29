@@ -1,0 +1,6 @@
+# official grml debian repo
+# apt-get update && apt-get --allow-unauthenticated install grml-debian-keyring
+# deb http://deb.grml.org/ grml-stable main
+# deb-src http://deb.grml.org/ grml-stable main
+deb http://deb.grml.org/ grml-testing main
+deb-src http://deb.grml.org/ grml-testing main

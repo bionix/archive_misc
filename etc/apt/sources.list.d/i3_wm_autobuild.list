@@ -1,0 +1,3 @@
+# official i3wm debian repo
+# apt-get update && apt-get --allow-unauthenticated install i3-autobuild-keyring
+deb http://build.i3wm.org/debian/sid sid main

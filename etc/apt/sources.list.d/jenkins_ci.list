@@ -1,0 +1,3 @@
+# official jenkins debian repo
+# wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key ad
+deb http://pkg.jenkins-ci.org/debian binary/

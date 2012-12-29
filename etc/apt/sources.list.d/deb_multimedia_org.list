@@ -1,0 +1,8 @@
+# official deb-multimedia.org debian repo
+# apt-get update && apt-get --allow-unauthenticated install deb-multimedia-keyring
+#deb http://www.deb-multimedia.org stable main non-free
+#deb-src http://www.deb-multimedia.org stable main non-free
+deb http://www.deb-multimedia.org wheezy main non-free
+deb-src http://www.deb-multimedia.org wheezy main non-free
+#deb http://www.deb-multimedia.org unstable main non-free
+#deb-src http://www.deb-multimedia.org unstable main non-free
