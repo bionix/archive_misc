@@ -1,4 +1,4 @@
-# official webupd8team repo for oracle java7 installer
+# official webupd8team repo for oracle java8 installer
 # apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
 deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main
 deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main

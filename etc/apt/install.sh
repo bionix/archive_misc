@@ -16,12 +16,10 @@ cd /etc/apt/sources.list.d ;
 
 echo "Download the apt sourceslist files from Github"
 wget -q --no-check-certificate "https://raw.github.com/bionix/misc/master/etc/apt/sources.list.d/grml.list" ;
-wget -q --no-check-certificate "https://raw.github.com/bionix/misc/master/etc/apt/sources.list.d/varnish_repo.list" ;
-wget -q --no-check-certificate "https://raw.github.com/bionix/misc/master/etc/apt/sources.list.d/deb_multimedia_org.list" ;
 wget -q --no-check-certificate "https://raw.github.com/bionix/misc/master/etc/apt/sources.list.d/dotdeb.list" ;
 wget -q --no-check-certificate "https://raw.github.com/bionix/misc/master/etc/apt/sources.list.d/i3_wm_autobuild.list" ;
 wget -q --no-check-certificate "https://raw.github.com/bionix/misc/master/etc/apt/sources.list.d/jenkins_ci.list" ;
-wget -q --no-check-certificate "https://raw.github.com/bionix/misc/master/etc/apt/sources.list.d/oracle_java7_installer.list" ;
+wget -q --no-check-certificate "https://raw.github.com/bionix/misc/master/etc/apt/sources.list.d/oracle_java8_installer.list" ;
 wget -q --no-check-certificate "https://raw.github.com/bionix/misc/master/etc/apt/sources.list.d/virtualbox.list" ;
 
 echo "Installing google chrome debian package with repo/key infos - NOT the software!"
@@ -36,14 +34,12 @@ echo "Install jenkins key"
 wget -q -O- http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add -
 echo "Install webupd8team repo key"
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
-echo "Install varnish repo key"
-wget -q -O- http://repo.varnish-cache.org/debian/GPG-key.txt | apt-key add -
 echo "Install virtualbox repo"
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add -
 echo "Update apt cache"
 apt-get update -qq ;
 echo "Install the keyrings"
-apt-get -y --allow-unauthenticated install deb-multimedia-keyring grml-debian-keyring i3-autobuild-keyring
+apt-get -y --allow-unauthenticated install grml-debian-keyring i3-autobuild-keyring
 
 echo "-- END --"
 
